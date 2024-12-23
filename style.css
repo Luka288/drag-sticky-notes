@@ -1,0 +1,162 @@
+:root {
+  --main-font: "Montserrat", "Sans-Serif";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 500px;
+  height: 70px;
+  z-index: 1121;
+  justify-self: center;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  background-color: #2d2d38;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  font-family: var(--main-font);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/pattern-bg.png");
+  background-size: contain;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  font-size: 25px;
+  font-family: var(--main-font);
+  border-top: 10px solid orange;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+}
+
+.card p {
+  word-break: break-all;
+  user-select: none;
+}
+
+.modal {
+  width: 550px;
+  height: 550px;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  z-index: 250;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #2f353b;
+  position: absolute;
+  display: none;
+}
+
+.modal form {
+  font-family: var(--main-font);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding-top: 50px;
+  font-size: 25px;
+  height: 100%;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputWrap label {
+  font-size: 15px;
+}
+
+.modal form input {
+  width: 350px;
+  height: 44px;
+  border-radius: 3px;
+  font-size: 25px;
+  color: white;
+  background-color: #495668;
+  border: 2px solid rgb(100, 100, 100);
+  outline: none;
+}
+
+.active {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 240;
+  display: none;
+}
+
+.activeOverlay {
+  display: block;
+}
+
+.modal .topContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.modal .topContainer i {
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+#submitBtn {
+  width: 130px;
+  height: 60px;
+  margin-top: 50px;
+  background-color: #1e3a5f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+#submitBtn:hover {
+  background-color: #2b5080;
+  transition: all 0.3s;
+}

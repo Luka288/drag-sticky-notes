@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6022f77fe4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a class="addNote"><i class="fa-solid fa-plus"></i> Add note</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="overlay"></div>
+      <div class="modal">
+        <div class="topContainer">
+          <i class="fa-solid fa-x closeX"></i>
+        </div>
+        <form class="inputForm">
+          <div class="inputWrap">
+            <label for="noteTitle"
+              >Enter note (maximum character length is 100)</label
+            >
+            <input
+              type="text"
+              id="noteTitle"
+              name="noteTitle"
+              maxlength="100"
+            />
+          </div>
+          <button type="submit" id="submitBtn">Add note</button>
+        </form>
+      </div>
+      <div class="container"></div>
+    </main>
+  </body>
+</html>
